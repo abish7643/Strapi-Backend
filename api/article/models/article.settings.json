@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "articles",
   "info": {
-    "name": "article"
+    "name": "article",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "title": {
@@ -36,7 +38,6 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "title",
       "required": true
     },
     "category": {
@@ -55,8 +56,8 @@
       "required": true
     },
     "author": {
-      "via": "articles",
-      "model": "writer"
+      "model": "writer",
+      "via": "articles"
     }
   }
 }
