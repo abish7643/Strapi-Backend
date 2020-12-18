@@ -38,7 +38,8 @@
     },
     "slug": {
       "type": "uid",
-      "required": true
+      "required": true,
+      "targetField": "title"
     },
     "category": {
       "model": "category",
