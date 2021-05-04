@@ -36,11 +36,6 @@
       "required": true,
       "default": "draft"
     },
-    "slug": {
-      "type": "uid",
-      "required": true,
-      "targetField": "title"
-    },
     "category": {
       "model": "category",
       "via": "articles"
@@ -59,6 +54,11 @@
     "author": {
       "model": "writer",
       "via": "articles"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }

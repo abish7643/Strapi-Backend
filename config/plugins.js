@@ -22,19 +22,19 @@ module.exports = ({ env }) => ({
   // },
   // ------------------------------------
   // -------------NodeMailer-------------
-  email: {
-    provider: "nodemailer-refactor",
-    providerOptions: {
-      host: env("SMTP_HOST"),
-      port: env("SMTP_PORT"),
-      secure: env("SMTP_SECURE"),
-      username: env("SMTP_USERNAME"),
-      password: env("SMTP_PASSWORD"),
-    },
-    settings: {
-      defaultFrom: "admin@3iinc.xyz",
-      defaultReplyTo: "admin@3iinc.xyz",
-    },
-  },
+  // email: {
+  //   provider: "nodemailer-refactor",
+  //   providerOptions: {
+  //     host: env("SMTP_HOST"),
+  //     port: env("SMTP_PORT"),
+  //     secure: env("SMTP_SECURE"),
+  //     username: env("SMTP_USERNAME"),
+  //     password: env("SMTP_PASSWORD"),
+  //   },
+  //   settings: {
+  //     defaultFrom: "admin@3iinc.xyz",
+  //     defaultReplyTo: "admin@3iinc.xyz",
+  //   },
+  // },
   // ------------------------------------
 });
