@@ -35,7 +35,7 @@ module.exports = ({ env }) => ({
         user: env("SMTP_USERNAME"),
         clientId: env("CLIENT_ID"),
         clientSecret: env("CLIENT_SECRET"),
-        // refreshToken: "REFRESH_TOKEN_HERE", 
+        // refreshToken: "REFRESH_TOKEN_HERE",
       },
     },
     settings: {
