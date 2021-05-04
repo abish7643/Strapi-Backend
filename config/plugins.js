@@ -29,8 +29,13 @@ module.exports = ({ env }) => ({
       port: env("SMTP_PORT"),
       secure: env("SMTP_SECURE"),
       auth: {
-        username: env("SMTP_USERNAME"),
-        password: env("SMTP_PASSWORD"),
+        // username: env("SMTP_USERNAME"),
+        // password: env("SMTP_PASSWORD"),
+        type: "OAuth2",
+        user: env("SMTP_USERNAME"),
+        clientId: env("CLIENT_ID"),
+        clientSecret: env("CLIENT_SECRET"),
+        // refreshToken: "REFRESH_TOKEN_HERE", 
       },
     },
     settings: {
