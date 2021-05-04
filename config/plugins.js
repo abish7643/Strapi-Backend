@@ -23,15 +23,13 @@ module.exports = ({ env }) => ({
   // ------------------------------------
   // -------------NodeMailer-------------
   email: {
-    provider: "nodemailer",
+    provider: "smtp",
     providerOptions: {
       host: env("SMTP_HOST"),
       port: env("SMTP_PORT"),
       secure: env("SMTP_SECURE"),
-      auth: {
-        username: env("SMTP_USERNAME"),
-        password: env("SMTP_PASSWORD"),
-      },
+      username: env("SMTP_USERNAME"),
+      password: env("SMTP_PASSWORD"),
     },
     settings: {
       defaultFrom: "admin@3iinc.xyz",
